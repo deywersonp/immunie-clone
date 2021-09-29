@@ -51,17 +51,17 @@ export default function NavBar() {
       alignItems: 'center',
       justifyContent: 'space-between',
     }}>
-      <Link href="#" underline="none" className={classes.green}>
+      <Link href="https://immunie.net/passeverde" underline="none" className={classes.green}>
         <Typography component="p" sx={{ fontWeight: 'bold' }}>Passe Verde</Typography>
       </Link>
       <Link className={classes.services}>
         <Typography component="p">Serviços</Typography>
         <ArrowDropDown sx={{ marginLeft: 2 }} />
       </Link>
-      <Button className={classes.btn} color="secondary" variant="contained" size="small" startIcon={<LocalHospital />}>
+      <Button href="https://secure.immunie.net/" className={classes.btn} color="secondary" variant="contained" size="small" startIcon={<LocalHospital />}>
         Clínicas
       </Button>
-      <Button className={classes.btn} color="primary" variant="contained" size="small" startIcon={<Group />}>
+      <Button href="https://www.app.immunie.net/" className={classes.btn} color="primary" variant="contained" size="small" startIcon={<Group />}>
         Usuários
       </Button>
 

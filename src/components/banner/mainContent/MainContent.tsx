@@ -33,7 +33,7 @@ export default function MainContent() {
 
   useEffect(() => {
     Aos.init({ duration: 1000 })
-  }, [])
+  }, []);
 
   return (
     <Typography component="section" className={classes.section} data-aos="fade-up">
@@ -45,7 +45,7 @@ export default function MainContent() {
           Mantenha seus registros atualizados online. Controle o acesso a suas informações de forma segura no seu médico, escolas ou quando for viajar.
         </Typography>
         <Typography component="div" sx={{ padding: '6px' }}>
-          <Button color="primary" variant="contained" size="large">
+          <Button href="https://www.app.immunie.net/" color="primary" variant="contained" size="large">
             Começar Agora
           </Button>
         </Typography>
