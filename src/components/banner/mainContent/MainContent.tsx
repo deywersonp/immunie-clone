@@ -14,14 +14,12 @@ const useStyles = makeStyles({
   },
 
   header3: {
-    fontFamily: 'Lato',
     fontWeight: 700,
     padding: '8px'
   },
 
   header6: {
     color: '#2d3748',
-    fontFamily: 'Lato',
     fontSize: '1.2rem',
     padding: '8px'
   }

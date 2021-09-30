@@ -18,6 +18,9 @@ const theme = createTheme({
       secondary: '#718096'
     }
   },
+  typography: {
+    fontFamily: 'Lato, sans-serif',
+  }
 });
 
 export default theme;

@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { List, Typography } from "@mui/material";
+
 import IDetails from "../interfaces/IDetails";
 import DetailsTemplate from "./detailsTemplate/DetailsTemplate";
 
@@ -38,9 +39,9 @@ export default function AboutDetails() {
   return (
     <Typography component="div" className={classes.container}>
       <List>
-        <DetailsTemplate source={detailsData[0].source} legend={detailsData[0].legend} title={detailsData[0].title} content={detailsData[0].content} />
-        <DetailsTemplate source={detailsData[1].source} legend={detailsData[1].legend} title={detailsData[1].title} content={detailsData[1].content} />
-        <DetailsTemplate source={detailsData[2].source} legend={detailsData[2].legend} title={detailsData[2].title} content={detailsData[2].content} />
+        {detailsData.map((item, index) => {
+          return <DetailsTemplate key={index} source={item.source} legend={item.legend} title={item.title} content={item.content} />
+        })}
       </List>
     </Typography>
   )

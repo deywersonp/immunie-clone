@@ -8,6 +8,7 @@ import Banner from "./components/banner/Banner";
 import Header from "./components/header/Header";
 import About from './components/about/About';
 import Privacy from './components/privacy/Privacy';
+import WhereToUse from './components/whereToUse/WhereToUse';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Divider />
           <About />
           <Privacy />
+          <WhereToUse />
         </div>
       </ThemeProvider>
 

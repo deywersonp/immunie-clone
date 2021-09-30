@@ -1,9 +1,13 @@
 import { useEffect } from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@mui/material";
+
+import SectionHeader from "../sectionHeader/SectionHeader";
 import AboutDetails from "./aboutDetails/AboutDetails"
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+
 
 const useStyles = makeStyles({
   container: {
@@ -13,26 +17,6 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     paddingTop: '96px',
     paddingBottom: '96px'
-  },
-
-  headersContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    width: '100%',
-    alignText: 'center'
-  },
-
-  header4: {
-    fontFamily: 'Lato',
-    fontWeight: 'bold',
-    fontSize: '2.0243rem',
-    padding: '8px'
-  },
-
-  header6: {
-    fontSize: '1.25rem',
-    padding: '8px'
   },
 
   aboutDetailsContainer: {
@@ -59,13 +43,12 @@ export default function About() {
 
   const classes = useStyles();
 
+  const title = 'Por que uma Carteira Digital?';
+  const content = 'Seus registros de vacinas sempre seguros e certificados.';
+
   return (
     <Typography component="section" className={classes.container}>
-      <Typography component="div" className={classes.headersContainer} data-aos="fade-up">
-        <Typography component="h4" color="textPrimary" className={classes.header4}>Por que uma Carteira Digital?</Typography>
-        <Typography component="h6" color="textSecondary" className={classes.header6}>Seus registros de vacinas sempre seguros e certificados.
-        </Typography>
-      </Typography>
+      <SectionHeader title={title} content={content} />
       <Typography component="div" className={classes.aboutDetailsContainer}>
         <AboutDetails />
         <Typography component="div" className={classes.imgContainer}>

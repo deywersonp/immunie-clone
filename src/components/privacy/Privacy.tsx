@@ -33,13 +33,11 @@ const useStyles = makeStyles({
   },
 
   header4: {
-    fontFamily: 'Lato',
     fontSize: '2.0243rem',
     fontWeight: 'bold'
   },
 
   text: {
-    fontFamily: 'Lato',
     fontSize: '1rem',
     fontWeight: 400,
     marginTop: '15px',
@@ -78,7 +76,7 @@ export default function Privacy() {
           <Typography component="div" className={classes.textContainer} data-aos="fade-up">
             <Typography component="h4" color="white" className={classes.header4}>Privacidade em Primeiro Lugar</Typography>
             <Typography component="p" color="white" className={classes.text}>Immunie foi construído de acordo com os mais elevados padrões de privacidade global, estando 100% de acordo com a Lei Geral de Proteção de Dados Pessoais no Brasil (LGPDP – Lei 13.709/18), Regulamento Geral de Proteção de Dados Europeu (GDPR EU 2016/679) e California Data Protection Act (CDPA / 2018).</Typography>
-            <Button variant="contained" size="large" className={classes.btn}>Saber Mais</Button>
+            <Button href="https://immunie.net/terms-of-use/privacy-policy" variant="contained" size="large" className={classes.btn}>Saber Mais</Button>
           </Typography>
           <Typography component="div" className={classes.imgContainer}>
             <img style={{

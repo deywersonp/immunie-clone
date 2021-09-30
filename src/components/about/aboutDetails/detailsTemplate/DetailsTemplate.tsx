@@ -2,10 +2,10 @@ import { useEffect } from "react";
 
 import { makeStyles } from "@material-ui/styles";
 import { ListItem, Typography } from "@mui/material";
-import IDetails from "../../interfaces/IDetails";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import IDetails from "../../interfaces/IDetails";
 
 const useStyles = makeStyles({
   container: {
@@ -19,12 +19,10 @@ const useStyles = makeStyles({
   span: {
     fontSize: '1.25rem',
     fontWeight: 'bold',
-    fontFamily: 'Lato',
   },
 
   header6: {
     fontSize: '1rem',
-    fontFamily: 'Lato',
     lineHeight: '1.75',
     marginTop: '10px'
   }
