@@ -17,12 +17,12 @@ const useStyles = makeStyles({
     width: '60%',
     height: '100%',
     backgroundColor: '#f7f9fa',
-    transform: 'skew(-6deg) translateX(-16%)'
+    clipPath: 'polygon(0 0, 89% 0, 81% 100%, 0% 100%)'
   },
 
   normalDiv: {
-    transform: 'skew(+6deg) translateX(+16%)',
-    width: 'calc(100% - 16)'
+    width: 'calc(100% - 16)',
+    clipPath: 'none'
   }
 });
 
