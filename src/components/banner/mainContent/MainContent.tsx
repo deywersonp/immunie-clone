@@ -14,7 +14,6 @@ const useStyles = makeStyles({
   },
 
   header3: {
-    color: '#2d3748',
     fontFamily: 'Lato',
     fontWeight: 700,
     padding: '8px'

@@ -13,6 +13,10 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    text: {
+      primary: '#2d3748',
+      secondary: '#718096'
+    }
   },
 });
 

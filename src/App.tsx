@@ -1,9 +1,12 @@
-import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
+import CssBaseline from '@mui/material/CssBaseline';
+
 import { Divider } from "@mui/material";
+
 import Banner from "./components/banner/Banner";
 import Header from "./components/header/Header";
-import theme from './theme';
+import About from './components/about/About';
 
 export default function App() {
   return (
@@ -15,6 +18,7 @@ export default function App() {
         <div>
           <Banner />
           <Divider />
+          <About />
         </div>
       </ThemeProvider>
 
