@@ -11,6 +11,7 @@ import Privacy from './components/privacy/Privacy';
 import WhereToUse from './components/whereToUse/WhereToUse';
 import BlockchainTechnology from './components/blockchainTechnology/BlockchainTechnology';
 import OurTechnologies from './components/ourTechnologies/OurTechnologies';
+import HowItWorks from './components/howItWorks/HowItWorks';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <WhereToUse />
           <BlockchainTechnology />
           <OurTechnologies />
+          <HowItWorks />
         </Typography>
       </ThemeProvider>
     </Typography>
