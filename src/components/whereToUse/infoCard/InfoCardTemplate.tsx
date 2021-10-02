@@ -18,7 +18,23 @@ const useStyles = makeStyles({
     marginTop: '40px',
     border: 'none',
     boxShadow: 'none'
+  },
+
+  textContainer: {
+    height: '148px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around'
+  },
+
+  header6: {
+    color: '#718096'
+  },
+
+  paragraph: {
+    fontSize: '1.25rem'
   }
+
 });
 
 export default function InfoCardTemplate(props: IDetails) {
@@ -32,12 +48,12 @@ export default function InfoCardTemplate(props: IDetails) {
   return (
     <Paper component="div" className={classes.paperContainer} data-aos="fade-up">
       <img style={{
-        width: '200px',
+        width: '180px',
         height: '180px'
       }} src={props.source} alt={props.legend} />
-      <Typography component="div">
-        <Typography component="h6">{props.title}</Typography>
-        <Typography component="h6">{props.content}</Typography>
+      <Typography component="div" className={classes.textContainer}>
+        <Typography component="h6" className={classes.header6}>{props.title}</Typography>
+        <Typography component="h6" className={classes.paragraph}>{props.content}</Typography>
       </Typography>
     </Paper>
   )

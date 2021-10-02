@@ -7,8 +7,9 @@ import SideInfoCard from "./sideInfoCards.tsx/sideInfoCard";
 
 const useStyles = makeStyles({
   container: {
+    height: '1150px',
     backgroundColor: '#f7f9fa',
-    paddingTop: '80px'
+    padding: '96px 0px',
   },
 
   section: {
