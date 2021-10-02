@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { makeStyles } from "@material-ui/styles";
 import { List } from "@mui/material";
 
-import OurTechnologyTemplate from "./ourTechnologyTemplate/OurTechnologyTemplate";
+import OurTechnologyTemplate from "./ourTechnologiesTemplate/OurTechnologiesTemplate";
 import IDetails from "../../../interfaces/IDetails";
 
 import Aos from 'aos';

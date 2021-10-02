@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   btn: {
     color: 'rgba(0, 0, 0, 0.87)',
     backgroundColor: '#e0e0e0;',
-    width: '130px',
+    width: '135px',
     fontWeight: 'normal',
     '&:hover': {
       boxShadow: '0px 2px 4px - 1px rgb(0 0 0 / 20 %), 0px 4px 5px 0px rgb(0 0 0 / 14 %), 0px 1px 10px 0px rgb(0 0 0 / 12 %)',

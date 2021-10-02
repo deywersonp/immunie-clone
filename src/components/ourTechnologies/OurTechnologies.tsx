@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@mui/material";
 import SectionHeader from "../sectionHeader/SectionHeader";
-import OurTechnologyDetails from "./ourTechnologyDetails/OurTechnologyDetails";
+import OurTechnologyDetails from "./ourTechnologiesDetails/OurTechnologiesDetails";
 
 const useStyles = makeStyles({
   section: {
