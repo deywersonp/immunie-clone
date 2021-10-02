@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
+import ISectionHeader from '../../interfaces/ISectionHeader';
 
 import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@mui/material";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import ISectionHeader from './interfaces/ISectionHeader';
 
 const useStyles = makeStyles({
   headersContainer: {

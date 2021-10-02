@@ -1,43 +1,44 @@
-import { useEffect } from 'react';
+import IDetails from "../../../interfaces/IDetails";
 
-import { makeStyles } from "@material-ui/styles";
-import { Paper, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import InfoCardTemplate from "./InfoCardTemplate";
 
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 
-const useStyles = makeStyles({
-  paperContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '728px',
-    height: '180px',
-    padding: '16px',
-    marginTop: '40px',
-    border: 'none',
-    boxShadow: 'none'
-  }
-});
+const cardsData: IDetails[] =
+  [
+    {
+      source: './images/clinic.png',
+      legend: 'Clínicas',
+      title: 'CLÍNICAS',
+      content: 'Basta conectar sua carteira digital à sua clínica para que seu médico possa fazer o registro de novas vacinas.'
+    },
+    {
+      source: './images/school.png',
+      legend: 'Escolas',
+      title: 'ESCOLAS',
+      content: 'Compartilhe o cartão de vacinação, fiche de saúde, alergias e contatos de emergência em um clique.'
+    },
+    {
+      source: './images/travelling.png',
+      legend: 'Viagens',
+      title: 'VIAJANDO',
+      content: 'Você decide quando enviar resultados de seus exames para companhias aéreas por via digital, permitindo o Check In online.'
+    },
+    {
+      source: './images/events.png',
+      legend: 'Eventos Esportivos',
+      title: 'EVENTOS ESPORTIVOS',
+      content: 'Evite filas e aglomerações conectando o resultado de testes com o emissor do ingresso eletrônico.'
+    }
+  ]
+
 
 export default function InfoCards() {
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, [])
-
-  const classes = useStyles();
-
   return (
-    <Paper component="div" className={classes.paperContainer} data-aos="fade-up">
-      <img style={{
-        width: '200px',
-        height: '180px'
-      }} src="./images/clinic.png" alt="Clínicas" />
-      <Typography component="div">
-        <Typography component="h6">CLÍNICAS</Typography>
-        <Typography component="h6">Basta conectar sua carteira digital à sua clínica para que seu médico possa fazer o registro de novas vacinas.</Typography>
-      </Typography>
-    </Paper>
+    <Typography component="div">
+      {cardsData.map((card, index) => {
+        return <InfoCardTemplate key={index} source={card.source} legend={card.legend} title={card.title} content={card.content} />
+      })}
+    </Typography>
   )
 }

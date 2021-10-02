@@ -1,11 +1,11 @@
 import { useEffect } from "react";
+import IDetails from "../../../../interfaces/IDetails";
 
 import { makeStyles } from "@material-ui/styles";
 import { ListItem, Typography } from "@mui/material";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import IDetails from "../../interfaces/IDetails";
 
 const useStyles = makeStyles({
   container: {

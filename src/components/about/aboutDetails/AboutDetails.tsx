@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 import { List, Typography } from "@mui/material";
+import IDetails from "../../../interfaces/IDetails";
 
-import IDetails from "../interfaces/IDetails";
 import DetailsTemplate from "./detailsTemplate/DetailsTemplate";
 
 const useStyles = makeStyles({

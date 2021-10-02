@@ -27,14 +27,7 @@ export default function WhereToUse() {
     <Typography component="div" className={classes.container}>
       <SectionHeader title={title} content={content} />
       <Typography component="section" className={classes.section}>
-
-        <Typography component="div">
-          <InfoCards />
-          <InfoCards />
-          <InfoCards />
-          <InfoCards />
-        </Typography>
-
+        <InfoCards />
         <SideInfoCard />
       </Typography>
     </Typography>
