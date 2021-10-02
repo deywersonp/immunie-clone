@@ -35,10 +35,25 @@ export default function SectionHeader(props: ISectionHeader) {
 
   const classes = useStyles();
 
+  let primaryColor = '';
+  let secondaryColor = '';
+
+  if (props.primaryColor) {
+    primaryColor = props.primaryColor
+  } else {
+    primaryColor = "textPrimary"
+  }
+
+  if (props.secondaryColor) {
+    secondaryColor = props.secondaryColor
+  } else {
+    secondaryColor = "textSecondary"
+  }
+
   return (
     <Typography component="div" className={classes.headersContainer} data-aos="fade-up">
-      <Typography component="h4" color="textPrimary" className={classes.header4}>{props.title}</Typography>
-      <Typography component="h6" color="textSecondary" className={classes.header6}>{props.content}</Typography>
+      <Typography component="h4" color={primaryColor} className={classes.header4}>{props.title}</Typography>
+      <Typography component="h6" color={secondaryColor} className={classes.header6}>{props.content}</Typography>
     </Typography>
   )
 }

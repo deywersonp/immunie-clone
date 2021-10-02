@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import { makeStyles } from "@material-ui/styles";
-import { Typography } from "@mui/material";
+import { List, Typography } from "@mui/material";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -39,15 +39,15 @@ export default function AboutBlockchainTemplate() {
   const classes = useStyles();
 
   return (
-    <>
-      {aboutBlockchainData.map((data) => {
+    <List>
+      {aboutBlockchainData.map((data, index) => {
         return (
-          <Typography component="div" className={classes.container} data-aos="fade-up">
+          <Typography key={index} component="div" className={classes.container} data-aos="fade-up">
             <img src="./images/yellow-check.png" alt="Marcador de confirmação amarelo" />
             <Typography component="h6" className={classes.header6}>{data.content}</Typography>
           </Typography>
         )
       })}
-    </>
+    </List>
   )
 }

@@ -10,6 +10,7 @@ import About from './components/about/About';
 import Privacy from './components/privacy/Privacy';
 import WhereToUse from './components/whereToUse/WhereToUse';
 import BlockchainTechnology from './components/blockchainTechnology/BlockchainTechnology';
+import OurTechnology from './components/ourTechnology/OurTechnology';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Privacy />
           <WhereToUse />
           <BlockchainTechnology />
+          <OurTechnology />
         </Typography>
       </ThemeProvider>
     </Typography>
