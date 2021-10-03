@@ -13,6 +13,7 @@ import BlockchainTechnology from './components/blockchainTechnology/BlockchainTe
 import OurTechnologies from './components/ourTechnologies/OurTechnologies';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import OurPlans from './components/ourPlans/OurPlans';
+import Vaccination from './components/vaccination/Vaccination';
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         <CssBaseline />
         <Header />
         <Divider />
-        <Typography component="div">
+        <Typography component="main">
           <Banner />
           <Divider />
           <About />
@@ -31,6 +32,7 @@ export default function App() {
           <OurTechnologies />
           <HowItWorks />
           <OurPlans />
+          <Vaccination />
         </Typography>
       </ThemeProvider>
     </Typography>
