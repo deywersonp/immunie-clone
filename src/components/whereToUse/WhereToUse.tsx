@@ -8,6 +8,9 @@ import SideInfoCard from "./sideInfoCards.tsx/sideInfoCard";
 const useStyles = makeStyles({
   container: {
     height: '1150px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     backgroundColor: '#f7f9fa',
     padding: '96px 0px',
   },

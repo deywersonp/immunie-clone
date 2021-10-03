@@ -5,6 +5,9 @@ import OurTechnologyDetails from "./ourTechnologiesDetails/OurTechnologiesDetail
 
 const useStyles = makeStyles({
   section: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
     backgroundColor: '#3d93d0',
     padding: '96px 64px'
   }

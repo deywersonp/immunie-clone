@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
+
 import { makeStyles } from "@material-ui/styles";
 import { List } from "@mui/material";
 import IDetails from "../../../interfaces/IDetails";
 import HowItWorksTemplate from "./howItWorksTemplate/HowItWorksTemplate";
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const howItWorksDetails: IDetails[] =
   [
@@ -33,10 +38,14 @@ const useStyles = makeStyles({
 });
 
 export default function HowItWorksDetails() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, [])
+
   const classes = useStyles();
 
   return (
-    <List className={classes.container}>
+    <List className={classes.container} data-aos="fade-up">
       {howItWorksDetails.map((data, index) => {
         return <HowItWorksTemplate key={index} source={data.source} legend={data.legend} title={data.title} content={data.content} />
       })}

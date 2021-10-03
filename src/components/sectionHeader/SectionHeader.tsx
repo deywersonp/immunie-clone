@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    width: '100%',
+    maxWidth: '1108px',
     alignText: 'center'
   },
 
@@ -24,6 +24,7 @@ const useStyles = makeStyles({
 
   header6: {
     fontSize: '1.25rem',
+    textAlign: 'center',
     padding: '8px'
   }
 });

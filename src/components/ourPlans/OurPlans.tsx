@@ -1,14 +1,13 @@
 import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@mui/material";
 import SectionHeader from "../sectionHeader/SectionHeader";
-import HowItWorksDetails from "./howItWorksDetails/HowItWorksDetails";
+import OurPlansDetails from "./ourPlansDetails/OurPlansDetails";
 
 const useStyles = makeStyles({
   section: {
-    backgroundColor: 'rgb(247, 249, 250)',
     display: 'flex',
-    alignItems: 'center',
     flexDirection: 'column',
+    alignItems: 'center',
     padding: '96px 64px',
   },
 
@@ -17,17 +16,17 @@ const useStyles = makeStyles({
   }
 });
 
-export default function HowItWorks() {
+export default function OurPlans() {
   const classes = useStyles();
 
-  const title = "COMO FUNCIONA";
-  const content = "Fácil, simples e sem a necessidade de mais um aplicativo ocupando memória em seu telefone.";
+  const title = "Nossos Planos";
+  const content = "Fique sempre em dia, guarde seus registros com segurança, controle suas permissões, e utilize seu cartão digital de vacinação em qualquer lugar do mundo.";
 
   return (
     <Typography component="section" className={classes.section}>
       <SectionHeader title={title} content={content} />
       <Typography component="div" className={classes.container}>
-        <HowItWorksDetails />
+        <OurPlansDetails />
       </Typography>
     </Typography>
   )
