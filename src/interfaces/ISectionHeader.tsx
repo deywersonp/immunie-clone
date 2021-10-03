@@ -3,4 +3,5 @@ export default interface ISectionHeader {
   content: string;
   primaryColor?: string;
   secondaryColor?: string;
+  textButton?: string;
 }

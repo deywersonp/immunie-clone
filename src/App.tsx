@@ -14,6 +14,7 @@ import OurTechnologies from './components/ourTechnologies/OurTechnologies';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import OurPlans from './components/ourPlans/OurPlans';
 import Vaccination from './components/vaccination/Vaccination';
+import BestPlan from './components/bestPlan/BestPlan';
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <HowItWorks />
           <OurPlans />
           <Vaccination />
+          <BestPlan />
         </Typography>
       </ThemeProvider>
     </Typography>
