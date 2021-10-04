@@ -15,6 +15,7 @@ import HowItWorks from './components/howItWorks/HowItWorks';
 import OurPlans from './components/ourPlans/OurPlans';
 import Vaccination from './components/vaccination/Vaccination';
 import BestPlan from './components/bestPlan/BestPlan';
+import Footer from './components/footer/Footer';
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
           <Vaccination />
           <BestPlan />
         </Typography>
+        <Footer />
       </ThemeProvider>
     </Typography>
   );
