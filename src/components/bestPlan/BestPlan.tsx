@@ -53,8 +53,8 @@ export default function BestPlan() {
     <Typography component="section" className={classes.section}>
       <SectionHeader title={title} content={content} />
       <Typography component="div" className={classes.container} data-aos="fade-up">
-        {bestPlanData.map((item) => {
-          return <BestPlanDetails title={item.title} content={item.content} textButton={item.textButton} />
+        {bestPlanData.map((item, index) => {
+          return <BestPlanDetails key={index} title={item.title} content={item.content} textButton={item.textButton} />
         })}
       </Typography>
     </Typography>
